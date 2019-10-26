@@ -144,6 +144,15 @@
 		reset-gpios = GP_I2C2_FT5X06_RESET;
 	};
 
+	touchscreen@4a {
+		compatible = "atmel,maxtouch";
+		reg = <0x4a>;
+		pinctrl-names = "default";
+		pinctrl-0 = <&pinctrl_i2c2_ft5x06>;
+		interrupts-extended = GPIRQ_I2C2_FT5X06;
+		reset-gpios = GP_I2C2_FT5X06_RESET;
+	};
+
 	touchscreen@5d {
 		compatible = "goodix,gt9271";
 		pinctrl-names = "default";
